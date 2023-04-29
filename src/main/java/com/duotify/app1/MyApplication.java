@@ -13,7 +13,10 @@ public class MyApplication {
     String home() {
         return "Hello World!";
     }
-
+    @RequestMapping("/hello-world") 
+    String HelloWorld(){ 
+        return "Hello World"; 
+    }
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);
     }
