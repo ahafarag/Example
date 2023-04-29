@@ -18,6 +18,7 @@ public class MyApplication {
         return "Hello World"; 
     }
     public static void main(String[] args) {
+        System.getProperties().put( "server.port", 9090 );  
         SpringApplication.run(MyApplication.class, args);
     }
 
